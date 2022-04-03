@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #afa;
+  --secondary-color: #adf;
+  --light-gray: #eee;
+  --gray: #999;
+  --dark-gray: #222;
+}
+
+html,
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-gray);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  justify-content: center;
+  padding: 1vh 1vw;
+}
+
+app-roots {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
