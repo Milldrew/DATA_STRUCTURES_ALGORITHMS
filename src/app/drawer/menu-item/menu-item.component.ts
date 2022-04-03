@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuItemComponent implements OnInit {
   @Input() itemName: string = '';
+  @Input() urlCode: string = '';
   constructor() {}
 
   ngOnInit(): void {}

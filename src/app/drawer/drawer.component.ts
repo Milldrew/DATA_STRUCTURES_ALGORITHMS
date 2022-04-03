@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class DrawerComponent implements OnInit {
   constructor() {}
   menuItems = [
-    { name: 'Home', link: 'foo' },
-    { name: 'Data Structures Introduction', link: 'foo' },
-    { name: 'Algorithms Introduction', link: 'foo' },
-    { name: 'Big O', link: 'foo' },
-    { name: 'Hash Tables', link: 'foo' },
-    { name: 'Stacks and Queues', link: 'foo' },
+    { name: 'Home', link: '/home' },
+    { name: 'Data Structures Introduction', link: '/topic/data' },
+    { name: 'Algorithms Introduction', link: '/topic/algorithms' },
+    { name: 'Big O', link: '/topic/bigo' },
+    { name: 'Hash Tables', link: '/topic/hash' },
+    { name: 'Stacks and Queues', link: '/topic/stacks-queues' },
     { name: 'Recursion', link: 'foo' },
     { name: 'Dynamic Programming', link: 'foo' },
     { name: 'Node Based Data Structures', link: 'foo' },

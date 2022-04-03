@@ -1,2 +1,6 @@
-<app-menu-item *ngFor="let item of menuItems" [itemName]="item.name">
+<app-menu-item
+  *ngFor="let item of menuItems"
+  [urlCode]="item.link"
+  [itemName]="item.name"
+>
 </app-menu-item>

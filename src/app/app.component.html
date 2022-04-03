@@ -1,3 +1,4 @@
 <h1>Data Structures And Algorithms</h1>
-<app-drawer [ngClass]="drawerClasses"> </app-drawer>
+<app-drawer [ngClass]="drawerClasses" (click)="toggleDrawer()"> </app-drawer>
 <div class="fab" [ngStyle]="fabStyles" (click)="toggleDrawer()"></div>
+<router-outlet> </router-outlet>

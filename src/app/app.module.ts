@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DrawerComponent } from './drawer/drawer.component';
 import { MenuItemComponent } from './drawer/menu-item/menu-item.component';
+import { HomeComponent } from './home/home.component';
+import { TopicComponent } from './topic/topic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DrawerComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    HomeComponent,
+    TopicComponent
   ],
   imports: [
     BrowserModule,
