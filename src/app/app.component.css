@@ -5,13 +5,13 @@ h1 {
 app-drawer {
   display: flex;
   flex-direction: column;
-  padding: 3vh 1vw;
   align-items: center;
   top: 0;
   left: 0;
   position: fixed;
-  height: 100%;
-  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  width: 100%;
   background-color: var(--light-gray);
   color: var(--dark-gray);
   transform: translate(-100%);
@@ -21,12 +21,14 @@ app-drawer {
   animation-name: close-drawer;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  overflow: scroll;
 }
 
 .open {
   animation-name: open-drawer;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  overflow: scroll;
 }
 
 @keyframes open-drawer {
@@ -50,8 +52,8 @@ app-drawer {
   position: fixed;
   bottom: 4vw;
   right: 4vw;
-  width: 4vw;
-  height: 4vw;
+  width: 7vw;
+  height: 7vw;
   background-color: var(--primary-color);
   border-radius: 100%;
   border: 1px solid black;

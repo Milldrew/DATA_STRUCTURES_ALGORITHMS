@@ -1,3 +1,10 @@
 .menuItem {
-  border: 1px solid red;
+  color: var(--link-color);
+  cursor: pointer;
+}
+.menuItem:hover {
+  color: var(--link-hover-color);
+}
+.menuItem:active {
+  color: var(--link-active-color);
 }

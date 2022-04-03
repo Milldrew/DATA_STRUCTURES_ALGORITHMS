@@ -2,6 +2,9 @@
 :root {
   --primary-color: #afa;
   --secondary-color: #adf;
+  --link-color: #33a;
+  --link-hover-color: #da2;
+  --link-active-color: #dad;
   --light-gray: #eee;
   --gray: #999;
   --dark-gray: #222;
