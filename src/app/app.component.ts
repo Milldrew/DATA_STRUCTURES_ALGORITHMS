@@ -15,8 +15,8 @@ export class AppComponent {
     this.isOpen = !this.isOpen;
     this.fabStyles = {
       'background-color': this.isOpen
-        ? 'var(--light-gray)'
-        : 'var(--dark-gray)',
+        ? 'var(--primary-color)'
+        : 'var(--secondary-color)',
     };
     console.log(this.isOpen);
     this.drawerClasses = {

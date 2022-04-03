@@ -9,28 +9,10 @@ app-drawer {
   top: 0;
   left: 0;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: var(--light-gray);
   color: var(--dark-gray);
-}
-
-.fab {
-  position: fixed;
-  bottom: 4vw;
-  right: 4vw;
-  width: 4vw;
-  height: 4vw;
-  background-color: var(--dark-gray);
-  border-radius: 100%;
-  z-index: 3;
-}
-
-.fab:hover {
-  background-color: var(--gray);
-}
-.fab:active {
-  background-color: var(--secondary-color);
 }
 
 .close {
@@ -62,4 +44,23 @@ app-drawer {
   100% {
     transform: translate(-100%, 0%);
   }
+}
+
+.fab {
+  position: fixed;
+  bottom: 4vw;
+  right: 4vw;
+  width: 4vw;
+  height: 4vw;
+  background-color: var(--dark-gray);
+  border-radius: 100%;
+  border: 1px solid black;
+  z-index: 3;
+}
+
+.fab:hover {
+  background-color: var(--gray);
+}
+.fab:active {
+  background-color: var(--secondary-color);
 }
