@@ -4,7 +4,8 @@ h1 {
 
 app-drawer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 3vh 1vw;
   align-items: center;
   top: 0;
   left: 0;
@@ -13,20 +14,19 @@ app-drawer {
   width: 100vw;
   background-color: var(--light-gray);
   color: var(--dark-gray);
+  transform: translate(-100%);
 }
 
 .close {
   animation-name: close-drawer;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  font-size: 100px;
 }
 
 .open {
   animation-name: open-drawer;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  font-size: 100px;
 }
 
 @keyframes open-drawer {
@@ -52,15 +52,8 @@ app-drawer {
   right: 4vw;
   width: 4vw;
   height: 4vw;
-  background-color: var(--dark-gray);
+  background-color: var(--primary-color);
   border-radius: 100%;
   border: 1px solid black;
   z-index: 3;
-}
-
-.fab:hover {
-  background-color: var(--gray);
-}
-.fab:active {
-  background-color: var(--secondary-color);
 }

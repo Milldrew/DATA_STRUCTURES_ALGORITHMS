@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DrawerComponent implements OnInit {
   constructor() {}
+  menuItems = ['foo', 'bar', 'bax'];
 
   isOpen = false;
 

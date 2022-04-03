@@ -8,20 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isOpen = false;
   drawerClasses: any = {};
-  fabStyles = { 'background-color': 'var(--dark-gray)' };
+  fabStyles: any = {};
   title = 'DATA_STRUCTURES_ALGORITHMS';
 
   toggleDrawer() {
     this.isOpen = !this.isOpen;
     this.fabStyles = {
       'background-color': this.isOpen
-        ? 'var(--primary-color)'
-        : 'var(--secondary-color)',
+        ? 'var(--secondary-color)'
+        : 'var(--primary-color)',
     };
     console.log(this.isOpen);
     this.drawerClasses = {
-      close: this.isOpen,
-      open: !this.isOpen,
+      close: !this.isOpen,
+      open: this.isOpen,
     };
   }
 }
