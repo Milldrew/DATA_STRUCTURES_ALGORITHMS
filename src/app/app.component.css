@@ -32,3 +32,34 @@ app-drawer {
 .fab:active {
   background-color: var(--secondary-color);
 }
+
+.close {
+  animation-name: close-drawer;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  font-size: 100px;
+}
+
+.open {
+  animation-name: open-drawer;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  font-size: 100px;
+}
+
+@keyframes open-drawer {
+  0% {
+    transform: translate(-100%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes close-drawer {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-100%, 0%);
+  }
+}

@@ -7,17 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isOpen = false;
-  drawerStyles: any = {
-    'background-color': this.isOpen ? 'red' : 'orange',
-  };
+  drawerClasses: any = {};
+  fabStyles = { 'background-color': 'var(--dark-gray)' };
   title = 'DATA_STRUCTURES_ALGORITHMS';
 
   toggleDrawer() {
     this.isOpen = !this.isOpen;
+    this.fabStyles = {
+      'background-color': this.isOpen
+        ? 'var(--light-gray)'
+        : 'var(--dark-gray)',
+    };
     console.log(this.isOpen);
-    this.drawerStyles = {
-      'background-color': this.isOpen ? 'red' : 'orange',
-      transform: this.isOpen ? 'translate(100%, 0%)' : 'translate(0%, 0%)',
+    this.drawerClasses = {
+      close: this.isOpen,
+      open: !this.isOpen,
     };
   }
 }
