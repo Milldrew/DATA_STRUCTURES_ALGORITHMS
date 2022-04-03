@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DATA_STRUCTURES_ALGORITHMS';
+  toggleDrawer() {
+    console.log('drawer toggle');
+  }
 }

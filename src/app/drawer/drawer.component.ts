@@ -8,9 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DrawerComponent implements OnInit {
   constructor() {}
 
-  toggleDrawer() {
-    console.log('drawer toggle');
-  }
+  isOpen = false;
 
   ngOnInit(): void {}
 }
